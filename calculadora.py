@@ -5,7 +5,12 @@ def almacenar(x):
     operador=operador+str(x)
     otrav.set(operador)
     return otrav
-
+def resultado():
+    global operador
+    total = str(eval(operador))
+    otrav.set(total)
+    operador = ""
+    return otrav
 
 ventana=Tk()
 ventana.title("CALCULADORA")
@@ -35,6 +40,6 @@ boton16=Button(ventana,text="0",bd=6,bg="#102E59",fg="white",command=lambda:alma
 boton17=Button(ventana,text=".",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("."),width=5).place(x=100,y=240)
 boton18=Button(ventana,text="e",bd=6,bg="#102E59",fg="white",width=5).place(x=160,y=240)
 boton19=Button(ventana,text="-",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("-"),width=5).place(x=220,y=240)
-boton20=Button(ventana,text="=",bd=6,bg="#102E59",fg="white",width=5).place(x=280,y=240)
+boton20=Button(ventana,text="=",bd=6,bg="#102E59",fg="white",command=resultado,width=5).place(x=280,y=240)
 
 ventana.mainloop()
