@@ -1,5 +1,5 @@
 from tkinter import *
-from math import pi, e
+from math import *
 
 def almacenar(x):
     global operador
@@ -43,7 +43,7 @@ boton1=Button(ventana,text="7",bd=6,bg="#102E59",fg="white",command=lambda:almac
 boton2=Button(ventana,text="8",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(8),width=5).place(x=100,y=120)
 boton3=Button(ventana,text="9",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(9),width=5).place(x=160,y=120)
 boton4=Button(ventana,text="/",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("/"),width=5).place(x=220,y=120)
-boton5=Button(ventana,text="AC",bd=6,bg="#102E59",fg="white",command=limpiar,width=5).place(x=280,y=120)
+boton5=Button(ventana,text="AC",bd=6,bg="red",fg="white",command=limpiar,width=5).place(x=280,y=120)
 boton6=Button(ventana,text="4",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(4),width=5).place(x=40,y=160)
 boton7=Button(ventana,text="5",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(5),width=5).place(x=100,y=160)
 boton8=Button(ventana,text="6",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(6),width=5).place(x=160,y=160)
@@ -58,7 +58,7 @@ boton16=Button(ventana,text="0",bd=6,bg="#102E59",fg="white",command=lambda:alma
 boton17=Button(ventana,text=".",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("."),width=5).place(x=100,y=240)
 boton18=Button(ventana,text="e",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("e"),width=5).place(x=160,y=240)
 boton19=Button(ventana,text="-",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("-"),width=5).place(x=220,y=240)
-boton20=Button(ventana,text="=",bd=6,bg="#102E59",fg="white",command=resultado,width=5).place(x=280,y=240)
+boton20=Button(ventana,text="=",bd=6,bg="yellow",fg="black",command=resultado,width=5).place(x=280,y=240)
 boton21=Button(ventana,text="sen",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("sin("),width=10).place(x=40,y=300)
 boton22=Button(ventana,text="cos",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("cos("),width=10).place(x=140,y=300)
 boton23=Button(ventana,text="tan",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("tan("),width=10).place(x=240,y=300)
