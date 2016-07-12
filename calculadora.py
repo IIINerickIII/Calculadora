@@ -38,7 +38,7 @@ operador=""
 otrav=StringVar()
 messagebox.showinfo("CALCULADORA","BIENBENIDOS A NUESTRA CALCULADORA")
 etiqueta=Label(ventana,text="CASIO Bamba",bd=5,bg="#691B1B",fg="white").pack()
-caja=Entry(ventana,,textvariable=otrav,font=('arial',20,'bold'),bd=30,bg="powder blue",width=20,justify='right').place(x=20,y=20)
+caja=Entry(ventana,textvariable=otrav,font=('arial',20,'bold'),bd=30,bg="powder blue",width=20,justify='right').place(x=20,y=20)
 boton1=Button(ventana,text="7",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(7),width=5).place(x=40,y=120)
 boton2=Button(ventana,text="8",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(8),width=5).place(x=100,y=120)
 boton3=Button(ventana,text="9",bd=6,bg="#102E59",fg="white",command=lambda:almacenar(9),width=5).place(x=160,y=120)
