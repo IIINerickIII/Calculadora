@@ -29,6 +29,8 @@ def resultado():
             operador = ""
     operador = ""
     return otrav
+def salir():
+    ventana.destroy()
 
 ventana=Tk()
 ventana.title("CALCULADORA")
@@ -69,6 +71,6 @@ boton27=Button(ventana,text=")",bd=6,bg="#102E59",fg="white",command=lambda:alma
 boton28=Button(ventana,text="fact !",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("factorial("),width=10).place(x=40,y=380)
 boton29=Button(ventana,text="abs | |",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("abs("),width=10).place(x=140,y=380)
 boton30=Button(ventana,text="exp e^x",bd=6,bg="#102E59",fg="white",command=lambda:almacenar("exp("),width=10).place(x=240,y=380)
-boton31=Button(ventana,text="SALIR",bd=6,bg="#102E59",fg="white",command=ventana.quit,width=10).place(x=150,y=460)
+boton31=Button(ventana,text="SALIR",bd=6,bg="#102E59",fg="white",command=lambda ventana=ventana:quit(ventana)).place(x=150,y=460)
 
 ventana.mainloop()
